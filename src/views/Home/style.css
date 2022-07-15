@@ -1,0 +1,23 @@
+.home {
+    width: 100%;
+    height: calc(100vh - 190px);
+    background-color: rgb(199, 70, 70);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.home .home__carrousel {
+    height: 400px;
+    background-color:white;
+}
+.home .home__article-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    background-color:rgb(12, 3, 3);
+}
+.home .home__article-container .home__article-item{
+    width: 270px;
+    height: 200px;
+    background-color: aqua;
+}

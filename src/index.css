@@ -72,7 +72,7 @@ font-size: 1rem;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
-.app div{
+.app .main{
   width: 980px;
   margin: 0px auto;
 }
