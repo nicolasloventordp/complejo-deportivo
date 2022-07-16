@@ -4,15 +4,15 @@ import { faFutbol, faBaseball,faBasketballBall} from '@fortawesome/free-solid-sv
 export default function Menu() {
   return (
     <div className="menu">
-      <div className="menu__item">
+      <div className="menu__item" id="menuFutbol">
         <div className="menu__item-icon"><FontAwesomeIcon icon={faFutbol} /></div>
         <div className="menu__item-title">FÚTBOL</div>
       </div>
-      <div className="menu__item">
+      <div className="menu__item" id="menuTenis">
         <div className="menu__item-icon"><FontAwesomeIcon icon={faBaseball} /></div>
-        <div className="menu__item-title">TENIS</div>
+        <div className="menu__item-title" >TENIS</div>
       </div>
-      <div className="menu__item">
+      <div className="menu__item" id="menuBascket">
         <div className="menu__item-icon"><FontAwesomeIcon icon={faBasketballBall} /></div>
         <div className="menu__item-title">BASCKET</div>
       </div>

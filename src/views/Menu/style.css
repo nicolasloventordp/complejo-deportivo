@@ -17,12 +17,15 @@
     flex-direction: row;
     gap: 10px;
 }
-.menu .menu__item:hover{
-    color: rgb(62, 189, 109);
+#menuFutbol:hover{
+    color: var(--green-color);
     font-size: 28px;
 }
-.menu .menu__item .menu__item-icon{
+#menuTenis:hover{
+    color: var(--lightblue-color);
+    font-size: 28px;
 }
-.menu .menu__item .menu__item-title{
-    
+#menuBascket:hover{
+    color: var(--orange-color);
+    font-size: 28px;
 }
