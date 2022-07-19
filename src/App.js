@@ -14,19 +14,17 @@ import Tenis from './views/Tenis'
 export default function App() {
   return (
     <div className="app">
-      
-      <div className="main">
-        <Router>
-          <Header />
-          <Menu />
+      <Router>
+        <Header />
+        <Menu />
+        <div className="main">
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/futbol" element={<Futbol/>} />
             <Route path="/tenis" element={<Tenis/>} />
           </Routes>
-        </Router>
-      </div>
-        
+        </div>
+      </Router>
     </div>
     
       
