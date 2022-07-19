@@ -1,6 +1,6 @@
 .home {
     width: 100%;
-    height: calc(100vh - 190px);
+    height: calc(100vh - 100px);
     display: grid;
     grid-template-rows: 1fr 1fr;
     padding: 5px;

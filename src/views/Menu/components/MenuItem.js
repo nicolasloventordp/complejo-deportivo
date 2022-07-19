@@ -1,29 +1,13 @@
-import './style.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFutbol, faBaseball,faBasketballBall} from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom"
 import MenuItemIcon from './MenuItemIcon'
-export default function MenuItem({ className, id, icon, route }) {
+import MenuItemTitle from './MenuItemTitle'
+export default function MenuItem({ id, icon, route, title}) {
   return (
-    <div className={className} id={id}>
+    <div className="menu__item" id={id}>
           <Link to={route}>
-            <MenuItemIcon className={"menu__item-icon"} icon={icon}/>
-            <MenuItemTitle className={"menu__item-title"}/>
+            <MenuItemIcon icon={icon}/>
+            <MenuItemTitle title={title}/>
           </Link>
     </div>
-        /*<div className="menu__item" id="menuTenis">
-          <Link to="/tenis">
-            <div className="menu__item-icon"><FontAwesomeIcon icon={faBaseball} /></div>
-            <div className="menu__item-title" >TENIS</div>
-          </Link>
-        </div>
-        
-        <div className="menu__item" id="menuBascket">
-          <Link to="/bascket">
-            <div className="menu__item-icon"><FontAwesomeIcon icon={faBasketballBall} /></div>
-            <div className="menu__item-title">BASCKET</div>
-          </Link>
-        </div>*/
-      
   )   
 }

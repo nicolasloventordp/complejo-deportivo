@@ -1,5 +1,5 @@
-export default function MenuItemTitle({ className, title }) {
+export default function MenuItemTitle({ title }) {
   return (
-    <div className={className}>{title}</div>
+    <div className="menu__item-title">{title}</div>
   )   
 }

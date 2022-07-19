@@ -1,32 +1,20 @@
 import './style.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFutbol, faBaseball,faBasketballBall} from '@fortawesome/free-solid-svg-icons'
-import { Link } from "react-router-dom"
+import { faFutbol, faBaseball, faBasketballBall, faCalendarCheck} from '@fortawesome/free-solid-svg-icons'
+import MenuItem from './components/MenuItem'
+const itemsMenu = [
+  { id: "menuFutbol", route: "/futbol", icon: faFutbol, title: "FÚTBOL"},
+  { id: "menuTenis", route: "/tenis", icon: faBaseball, title: "TENIS"},
+  { id: "menuBascket", route: "/bascket", icon: faBasketballBall, title: "BASCKET"},
+  { id: "menuEventos", route: "/eventos", icon: faCalendarCheck, title: "EVENTOS"}
+]
 export default function Menu() {
   return (
     <div className="menu">
       <div className="menu-container main">
-        <div className="menu__item" id="menuFutbol">
-          <Link to="/futbol">
-            <div className="menu__item-icon"><FontAwesomeIcon icon={faFutbol} /></div>
-            <div className="menu__item-title">FÚTBOL</div>
-          </Link>
-        </div>
-      
-        <div className="menu__item" id="menuTenis">
-          <Link to="/tenis">
-            <div className="menu__item-icon"><FontAwesomeIcon icon={faBaseball} /></div>
-            <div className="menu__item-title" >TENIS</div>
-          </Link>
-        </div>
-        
-        <div className="menu__item" id="menuBascket">
-          <Link to="/bascket">
-            <div className="menu__item-icon"><FontAwesomeIcon icon={faBasketballBall} /></div>
-            <div className="menu__item-title">BASCKET</div>
-          </Link>
-        </div>
-      </div>
+        {itemsMenu.map( (item) => 
+          <MenuItem id={item.id} route={item.route} icon={item.icon} title={item.title}/>
+        )}
+      </div>  
     </div>
   )   
 }
