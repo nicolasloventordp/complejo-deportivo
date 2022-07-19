@@ -1,0 +1,31 @@
+.futbol {
+    width: 100%;
+}
+.futbol .futbol-container {
+    display: flex;
+    flex-direction: column;
+}
+.futbol .futbol-container .futbol__card{
+    width: 100%;
+    height: 300px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+.futbol .futbol-container .futbol__card img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.futbol .futbol-container .futbol__card .futbol__card-info{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: grid;
+    grid-template-rows: 250px 50px;
+}
+.futbol .futbol-container .futbol__card .futbol__card-info div{
+    display: flex;
+    justify-content: space-around;
+}
