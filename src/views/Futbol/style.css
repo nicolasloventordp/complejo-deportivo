@@ -1,9 +1,12 @@
 .futbol {
     width: 100%;
+    color: var(--green-color);
 }
 .futbol .futbol-container {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 }
 .futbol .futbol-container .futbol__card{
     width: 100%;
@@ -12,20 +15,22 @@
     display: flex;
     flex-direction: row;
 }
-.futbol .futbol-container .futbol__card img{
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-}
-.futbol .futbol-container .futbol__card .futbol__card-info{
+.futbol .futbol-container .futbol__card-img{
     width: 100%;
     height: 100%;
-    background-color: red;
-    display: grid;
-    grid-template-rows: 250px 50px;
+    object-fit: cover;
+    border-radius: 1rem 0rem 0rem 1rem;
 }
-.futbol .futbol-container .futbol__card .futbol__card-info div{
-    display: flex;
-    justify-content: space-around;
+.futbol .futbol-container .futbol__card .futbol__card-grid{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    padding: 10px;
+}
+.futbol .futbol-container .futbol__card .futbol__card-grid .futbol__card-grid-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    text-align: center;
 }
