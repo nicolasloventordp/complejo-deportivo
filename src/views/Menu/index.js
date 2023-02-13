@@ -9,8 +9,8 @@ const itemsMenu = [
 ]
 export default function Menu() {
   return (
-    <div className="menu">
-      <div className="menu-container main">
+    <div className="app-menu">
+      <div className="app-menu__container">
         {itemsMenu.map( (item) => 
           <MenuItem id={item.id} route={item.route} icon={item.icon} title={item.title}/>
         )}

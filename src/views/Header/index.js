@@ -5,10 +5,10 @@ import HeaderInfo from './components/HeaderInfo'
 
 export default function Header() {
   return (
-    <div className="header">
-      <div className="header-container main">
-        <HeaderLogo className={"header__logo"} logo={logo}/>
-        <HeaderInfo className={"header__info"} />
+    <div className="app-header">
+      <div className="app-header__container">
+        <HeaderLogo className={"app-header__logo"} logo={logo}/>
+        <HeaderInfo className={"app-header__info"} />
       </div>
     </div>
   );
