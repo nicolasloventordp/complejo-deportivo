@@ -1,0 +1,9 @@
+.app-body {
+  width: 980px;
+  margin: auto;
+}
+@media (max-width: 999px) {
+  .app-body {
+    width: 100%;
+  }
+}

@@ -1,14 +1,8 @@
 import './App.css'
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from "react-router-dom"
+import { BrowserRouter as Router } from "react-router-dom"
 import Header from './views/Header'
 import Menu from './views/Menu'
-import Home from './views/Home'
-import Futbol from './views/Futbol'
-import Tenis from './views/Tenis'
+import Body from './views/Body'
 
 
 export default function App() {
@@ -17,13 +11,7 @@ export default function App() {
       <Router>
         <Header />
         <Menu />
-        <div className="main">
-          <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/futbol" element={<Futbol/>} />
-            <Route path="/tenis" element={<Tenis/>} />
-          </Routes>
-        </div>
+        <Body />
       </Router>
     </div>
     
