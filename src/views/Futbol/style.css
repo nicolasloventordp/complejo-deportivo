@@ -1,36 +1,59 @@
 .futbol {
     width: 100%;
-    color: var(--green-color);
 }
-.futbol .futbol-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-}
-.futbol .futbol-container .futbol__card{
+
+.futbol .futbol-card {
     width: 100%;
-    height: 300px;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: row;
-}
-.futbol .futbol-container .futbol__card-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem 0rem 0rem 1rem;
-}
-.futbol .futbol-container .futbol__card .futbol__card-grid{
-    width: 50%;
-    height: 100%;
-    display: grid;
-    grid-template-rows: 1fr 3fr 1fr;
-    padding: 10px;
-}
-.futbol .futbol-container .futbol__card .futbol__card-grid .futbol__card-grid-info{
+    height: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    text-align: center;
+    border-radius: 10px;
+    color: var(--green-color);
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.futbol .futbol-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.futbol .futbol-card .futbol-card__info {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.futbol .futbol-card .futbol-card__info h1 {
+    padding: 10px;
+}
+
+.futbol .futbol-card .futbol-card__info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    overflow: auto;
+    height: 130px;
+}
+
+.futbol .futbol-card .futbol-card__info-grid .futbol-card__info-grid-caracteristicas,
+.futbol-card__info-grid-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.futbol .futbol-card .futbol-card__info-grid .futbol-card__info-grid-caracteristicas p {
+    margin: 4px;
+}
+
+.futbol .futbol-card .futbol-card__info-grid .futbol-card__info-grid-servicios p {
+    margin: 4px;
+}
+
+.futbol .futbol-card .futbol-card__info .futbol-card__info-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

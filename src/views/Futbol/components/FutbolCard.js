@@ -1,27 +1,25 @@
 import Button from "../../../components/Button"
-export default function FutbolCard({ img, title, caracteristicas, servicios}) {
+export default function FutbolCard({ img, title, caracteristicas, servicios }) {
   return (
-    <div className="futbol__card box-shadow-1">
-
-        <div className="futbol__card-img">
-          <img src={img} />
-        </div>
-
-        <div className="futbol__card-grid">
-          <h1 className="futbol__card-grid-title">{title}</h1>
-          <div className="futbol__card-grid-info">
-            <div>
-              <span>CARACTERISTICAS</span>
-              {caracteristicas?.map( (carac) => <p>•{carac}</p>)}
-            </div>
-            <div>
-              <span>SERVICIOS</span>
-              {servicios?.map( (serv) => <p>•{serv}</p>)}
-            </div>
-            <Button className={"futbol__card-grid-button"} text={"RESERVAR"} />
+    <div className="futbol-card box-shadow-1">
+      <img src={img} />
+      <div className="futbol-card__info">
+        <h1>{title}</h1>
+        <div className="futbol-card__info-grid">
+          <div className="futbol-card__info-grid-caracteristicas">
+            <span>CARACTERISTICAS</span>
+            {caracteristicas?.map((carac) => <p>•{carac}</p>)}
+          </div>
+          <div className="futbol-card__info-grid-servicios">
+            <span>SERVICIOS</span>
+            {servicios?.map((serv) => <p>•{serv}</p>)}
           </div>
         </div>
+        <div className="futbol-card__info-button">
+          <Button text={"RESERVAR"} />
+        </div>
+      </div>
     </div>
-    
-  )   
+
+  )
 }
